@@ -1,4 +1,6 @@
-Tables should be inside fenced code blocks, space-padded for alignment, so they can be copied as valid markdown into Obsidian. Example:
+For CLI output (but not file output), please fence in tables in code blocks,
+space-padded for alignment, so they can be copied as valid markdown into Obsidian.
+Example:
 
 ```
 | Priority |             Location              |         Scope         |
