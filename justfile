@@ -32,3 +32,7 @@ diff:
     difft --exit-code ~/.gemini/GEMINI.md AGENTS.md                || rc=1
     exit $rc
 
+new SKILL:
+    mkdir -p skills/{{SKILL}}
+    NAME="{{SKILL}}" envsubst < SKILL.template.md > skills/{{SKILL}}/SKILL.md
+    hx skills/{{SKILL}}/SKILL.md

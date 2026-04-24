@@ -1,5 +1,9 @@
-For CLI output (but not file output), please fence in tables in code blocks,
-space-padded for alignment, so they can be copied as valid markdown into Obsidian.
+## Markdown CLI output
+Tables in CLI output (but not file output) should be fenced in tables in code blocks
+to bypass rendering into boxdrawing.
+This is to simplify pasting into other apps, e.g. Obsidian.
+Column alignment is controlled using colon (:).
+This applies to all tables in every response.
 Example:
 
 ```
@@ -11,4 +15,5 @@ Example:
 |        4 | Nested .claude/skills/ in subdirs | Subdirectory-specific |
 ```
 
+## Disk operations
 Move files with `git mv` when applicable.
