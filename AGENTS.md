@@ -17,3 +17,6 @@ Example:
 
 ## Disk operations
 Move files with `git mv` when applicable.
+
+## Don't lint and test
+This is done via pre-commit hook, so you don't need to do it after every edit.
