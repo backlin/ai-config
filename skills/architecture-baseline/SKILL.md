@@ -3,8 +3,23 @@ name: architecture-baseline
 description: update baseline architecture of a repo, i.e. its current state
 ---
 
-Analyze the code and config in a repo and write down a high level summary of the different
+Expected location: `architecture/BASELINE.md`
+First line should contain the commit SHA that the baseline describes.
+
+
+# Create if missing
+
+Analyze the code and config in the repo and write down a high level summary of the different
 services, interfaces, packages, workflows, and tooling in file `architecture/BASELINE.md`.
+
+
+# Incremental update
+
+If HEAD matches baseline's SHA then analyze the files to be committed,
+else also include previous commits between HEAD and baseline SHA.
+
+
+# Scope boundary
 
 To save time, do not analyze dependency code, e.g.:
 - vendor

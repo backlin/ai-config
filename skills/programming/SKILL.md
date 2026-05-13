@@ -35,6 +35,9 @@ Side-effect are allowed when unavoidable, for example in functions
 that write to disk, log messages, listen to events, or similar.
 Ask for permission before adding shared global state.
 
+Keep minimum state in memory whenever possible,
+e.g. using file iterator rather than loading all into memory before processing if possible.
+
 ## Naming
 Function names should typically be nouns, e.g. `db.tables()` rather than `db.getTables()`.
 
@@ -42,7 +45,6 @@ Verb names are only used when:
 
 - Function modifies shared state, e.g. `results.writeFile(path)`.
 - Method updates internal state, e.g. `issues.sync()`.
-- 
 
 ## Concurrency
 Sequential processing is the norm.
