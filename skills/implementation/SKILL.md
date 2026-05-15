@@ -13,10 +13,12 @@ If missing, ask user if it is located elsewhere or should be written from scratc
 
 Create target file `architecture/TARGET_yymmdd_short_description.md`, e.g. `architecture/TARGET_260508_persistent_tokens.md`,
 containing a summary of the requested features.
+First line must be `baseline = <SHA>`, i.e the commit SHA of baseline that target builds on top of.
 
 Unaffected baseline components can be omitted, e.g. if working on backend then omit frontend.
 
 Compare baseline and target states and write a step by step plan for implementing the requested features.
+First line must be `baseline = <SHA>`, i.e the commit SHA of baseline that target builds on top of.
 Add a checkbox to each step to indicate if it has been implemented or not.
 If plan contains many steps then group into phases.
 

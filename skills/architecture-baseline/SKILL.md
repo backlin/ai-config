@@ -4,7 +4,7 @@ description: update baseline architecture of a repo, i.e. its current state
 ---
 
 Expected location: `architecture/BASELINE.md`
-First line should contain the commit SHA that the baseline describes.
+First line contains commit SHA when baseline was updated.
 
 
 # Create if missing
