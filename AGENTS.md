@@ -1,3 +1,17 @@
+## Secert handling
+I prevent AI tools from managing secrets through external means.
+If given access to secret management then alert me (this is accidental).
+Escalate to me, the human-in-the-loop, when needed.
+
+Exercise good secret hygiene at all times. Avoid suggesting things that leak
+secrets into shell history or third party.
+
+Example of bad practice:
+ ```sh
+gh secret set HOMEBREW_TAP_GITHUB_TOKEN --repo NoFuss-io/frontmatter --body 'github_pat_PASTE_HERE'
+ ```
+
+
 ## Markdown CLI output
 Tables in CLI output (but not file output) should be fenced in tables in code blocks
 to bypass rendering into boxdrawing.
